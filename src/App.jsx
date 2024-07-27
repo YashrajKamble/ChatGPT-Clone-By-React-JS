@@ -57,29 +57,31 @@ function App() {
 
           <div className="main">
             <div className="chats">
-              <img src={userIcon} alt="" />
-              <p className="txt">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem cum, natus quasi eius excepturi repellendus! Laborum,
-                possimus velit corrupti est natus, eligendi vel quam esse
-                reiciendis quaerat doloribus necessitatibus cum blanditiis
-                dolores dolore nostrum magni officiis expedita asperiores?
-                Pariatur mollitia provident beatae illo vero eveniet hic,
-                nesciunt labore! Obcaecati, ducimus labore!
-              </p>
+              <div className="chat">
+                <img className="chatImg" src={userIcon} alt="" />
+                <p className="txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem cum, natus quasi eius excepturi repellendus!
+                  Laborum, possimus velit corrupti est natus, eligendi vel quam Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iusto explicabo reiciendis nemo eum incidunt maiores cupiditate delectus eligendi provident iure eos et hic aliquid, ut ipsum architecto voluptatem recusandae, repellendus aperiam! Molestias, aliquid. Odit, iste doloremque numquam ipsa cupiditate amet possimus, nostrum, voluptate cum velit accusantium beatae? Veritatis ratione harum iure perferendis aliquid hic. Magnam aperiam doloremque veritatis voluptatibus odit vel molestiae iusto odio sapiente id sequi dignissimos porro atque nisi perferendis, vero natus voluptatem tenetur laudantium quas rerum veniam assumenda? Cumque, saepe quae autem molestias aliquid omnis, sint eum repellendus accusamus incidunt repellat dolore! Totam sequi quae, vel, hic at voluptatibus inventore dicta voluptate sit quibusdam, omnis itaque fuga?
+                </p>
+              </div>
+              <div className="chat bot">
+                <img className="chatImg" src={gptImgLogo} alt="" />
+                <p className="txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem cum, natus quasi eius excepturi repellendus!
+                  Laborum, possimus velit corrupti est natus, eligendi vel quam
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quibusdam ex aliquid, in adipisci laborum voluptatum a cum
+                  dolorum ipsam illum reiciendis atque similique optio magnam,
+                  obcaecati sed commodi praesentium autem ut incidunt! Aut,
+                  tenetur sunt hic omnis quos quis tempora molestias vero
+                  pariatur. Voluptatum esse possimus reiciendis sint aliquam ex
+                  doloribus dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nemo ipsum, ad quibusdam qui cum nulla excepturi tempora sit nesciunt eius assumenda molestiae, officia corrupti a quis in ratione? Sint non possimus, placeat nisi nesciunt consequuntur velit neque a! Dolorem adipisci nulla porro ipsa dicta autem exercitationem sequi reprehenderit. Soluta omnis explicabo perferendis blanditiis. Necessitatibus repudiandae vero exercitationem accusamus reiciendis qui inventore, magni rerum possimus, magnam illo eligendi cum, deserunt odio nulla. Quasi ad optio assumenda earum, magnam laudantium eos exercitationem iure, harum dolorem fuga, alias eaque! Vitae, tempora distinctio officiis quos nobis exercitationem voluptates debitis sequi, nesciunt, quam ratione. Culpa, deserunt? Consequatur praesentium voluptatibus dolore facere necessitatibus obcaecati nisi omnis?
+                </p>
+              </div>
             </div>
-            <div className="chats">
-              <img src={gptImgLogo} alt="" />
-              <p className="txt">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem cum, natus quasi eius excepturi repellendus! Laborum,
-                possimus velit corrupti est natus, eligendi vel quam esse
-                reiciendis quaerat doloribus necessitatibus cum blanditiis
-                dolores dolore nostrum magni officiis expedita asperiores?
-                Pariatur mollitia provident beatae illo vero eveniet hic,
-                nesciunt labore! Obcaecati, ducimus labore!
-              </p>
-            </div>
+
             <div className="chatFooter">
               <div className="inp">
                 <input type="text" placeholder="Message ChatGPT" />
@@ -87,6 +89,7 @@ function App() {
                   <img src={sendBtn} alt="Send" />
                 </button>
               </div>
+              <p>ChatGPT can make mistakes. Check important info.</p>
             </div>
           </div>
         </div>
