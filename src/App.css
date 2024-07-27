@@ -38,4 +38,50 @@ body {
 
 .upperSide {
   padding: 3rem;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  height: 70%;
+}
+
+.upperSideTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.addBtn {
+  height: 2rem;
+  padding-right: 2rem;
+}
+
+.midBtn {
+  background: #5a4bff;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.query {
+  align-items: center;
+  display: flex;
+  background: transparent;
+  color: rgba(222, 222, 222, 1);
+  padding: 1.5rem;
+  width: 25rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(90, 90, 90, 1);
+}
+
+.query > img {
+  margin-right: 1.5rem;
+  object-fit: cover;
+  height: 1.75rem;
 }

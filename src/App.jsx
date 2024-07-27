@@ -13,26 +13,25 @@ function App() {
         <div className="app">
           <div className="sideBar">
             <div className="upperSide">
+              
               <div className="upperSideTop">
                 <img src={gptLogo} alt="Logo" className="logo" />
                 <span className="brand">ChatGPT</span>
-                <div>
-                  <button className="midBtn">
-                    <img src={addBtn} alt="New Chat" className="addBtn" />
-                    New Chat
-                  </button>
-                </div>
+              </div>
+              <button className="midBtn">
+                <img src={addBtn} alt="New Chat" className="addBtn" />
+                New Chat
+              </button>
 
-                <div className="upperSideBottom">
-                  <button className="query">
-                    <img src={msgIcon} alt="Query" />
-                    What is React JS?
-                  </button>
-                  <button className="query">
-                    <img src={msgIcon} alt="Query" />
-                    What is Next JS?
-                  </button>
-                </div>
+              <div className="upperSideBottom">
+                <button className="query">
+                  <img src={msgIcon} alt="Query" />
+                  What is React JS?
+                </button>
+                <button className="query">
+                  <img src={msgIcon} alt="Query" />
+                  What is Next JS?
+                </button>
               </div>
             </div>
 
