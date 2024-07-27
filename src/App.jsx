@@ -13,7 +13,6 @@ function App() {
         <div className="app">
           <div className="sideBar">
             <div className="upperSide">
-              
               <div className="upperSideTop">
                 <img src={gptLogo} alt="Logo" className="logo" />
                 <span className="brand">ChatGPT</span>
@@ -48,7 +47,7 @@ function App() {
 
               <div className="listItems">
                 <img src={rocket} alt="Upgrade" className="listItemsImg" />
-                Upgrade
+                Upgrade to Pro
               </div>
             </div>
           </div>

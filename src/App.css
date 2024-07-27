@@ -59,7 +59,7 @@ body {
   color: white;
   padding: 1.5rem;
   font-size: 1.5rem;
-  width: 20rem;
+  width: 25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,4 +84,28 @@ body {
   margin-right: 1.5rem;
   object-fit: cover;
   height: 1.75rem;
+}
+
+.lowerSide {
+  padding: 2rem;
+}
+
+.listItems {
+  margin: 0.75rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.listItemsImg {
+  margin: 0.5rem;
+  padding-right: 1rem;
+}
+
+.listItems:nth-child(1) > .listItemsImg {
+  margin-right: 0.1rem;
+}
+
+.listItems:nth-child(3) > .listItemsImg {
+  margin-right: 0.3rem;
 }
