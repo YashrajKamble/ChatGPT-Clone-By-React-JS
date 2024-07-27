@@ -128,19 +128,23 @@ body {
   justify-content: center;
 }
 
+.chatFooter > p {
+  margin: 1rem 0;
+}
+
 .inp {
   padding: 0.5rem;
   background: rgba(28, 30, 58, 1);
   display: flex;
   align-items: center;
   border-radius: 6.5rem;
-  width: 87rem;
+  width: 75rem;
 }
 
 .inp > input {
   width: calc(100%-3rem);
   outline: none;
-  padding: 1.25rem;
+  padding: 1.1rem;
   color: white;
   flex: 1;
 }
@@ -154,24 +158,27 @@ body {
   margin-right: 1rem;
 }
 
-.chat > img {
-  height: 5rem;
-}
-
 .chats {
-  /* overflow: hidden; */
+  overflow: hidden;
   overflow-y: scroll;
-  /* overflow: hidden; */
   scroll-behavior: smooth;
-  width: 100%;
+  width: 75%;
   min-width: 70rem;
   height: calc(100vh - 17rem);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.chats::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .chat {
   margin: 1rem;
   padding: 2rem 3rem;
-  font-size: 1.3rem;
+  /* font-size: 1.35rem; */
+  font-size: 1.5rem;
   display: flex;
   align-items: flex-start;
   text-align: justify;
@@ -179,13 +186,15 @@ body {
 
 .chatImg {
   object-fit: cover;
-  width: 4rem;
+  width: 3rem;
+  height: 3rem;
   margin-right: 2rem;
-  /* margin: 1rem 0; */
   border-radius: 0.5rem;
 }
+
 .bot {
   background: rgba(28, 30, 58, 1);
   width: fit-content;
   border-radius: 0.5rem;
+  font-weight: 100;
 }
