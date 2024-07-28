@@ -36,6 +36,7 @@ function App() {
       { text: res, isBot: true },
     ]);
   };
+
   const handleEnter = async (e) => {
     if (e.key === "Enter") await handleSend();
   };
@@ -58,6 +59,7 @@ function App() {
         <div className="app">
           <div className="sideBar">
             <div className="upperSide">
+
               <div className="upperSideTop">
                 <img src={gptLogo} alt="Logo" className="logo" />
                 <span className="brand">ChatGPT</span>
@@ -111,6 +113,7 @@ function App() {
           </div>
 
           <div className="main">
+
             <div className="chats">
               {message.map((message, i) => (
                 <div key={i} className={message.isBot ? "chat bot" : "chat"}>
@@ -136,12 +139,15 @@ function App() {
                     setInput(e.target.value);
                   }}
                 />
+
                 <button className="send">
                   <img src={sendBtn} alt="Send" onClick={handleSend} />
                 </button>
+
               </div>
               <p>ChatGPT can make mistakes. Check important info.</p>
             </div>
+
           </div>
         </div>
       </div>
