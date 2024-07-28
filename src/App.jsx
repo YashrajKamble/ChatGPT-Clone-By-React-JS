@@ -29,7 +29,7 @@ function App() {
     const text = input;
     setInput("");
     setMessage([...message, { text, isBot: false }]);
-    const res = await sendMsgToOpenAI(input);
+    const res = await sendMsgToOpenAI(text);
     setMessage([
       ...message,
       { text, isBot: false },
@@ -45,7 +45,7 @@ function App() {
     const text = e.target.value;
     setInput("");
     setMessage([...message, { text, isBot: false }]);
-    const res = await sendMsgToOpenAI(input);
+    const res = await sendMsgToOpenAI(text);
     setMessage([
       ...message,
       { text, isBot: false },
@@ -59,7 +59,6 @@ function App() {
         <div className="app">
           <div className="sideBar">
             <div className="upperSide">
-
               <div className="upperSideTop">
                 <img src={gptLogo} alt="Logo" className="logo" />
                 <span className="brand">ChatGPT</span>
@@ -113,7 +112,6 @@ function App() {
           </div>
 
           <div className="main">
-
             <div className="chats">
               {message.map((message, i) => (
                 <div key={i} className={message.isBot ? "chat bot" : "chat"}>
@@ -143,11 +141,9 @@ function App() {
                 <button className="send">
                   <img src={sendBtn} alt="Send" onClick={handleSend} />
                 </button>
-
               </div>
               <p>ChatGPT can make mistakes. Check important info.</p>
             </div>
-
           </div>
         </div>
       </div>
