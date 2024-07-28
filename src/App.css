@@ -67,6 +67,7 @@ body {
   margin: 0 auto;
   margin-bottom: 2.5rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .query {
@@ -197,4 +198,8 @@ body {
   width: fit-content;
   border-radius: 0.5rem;
   font-weight: 100;
+}
+.txt {
+  line-height: 2.4rem;
+  color: rgba(222, 222, 222, 1);
 }
